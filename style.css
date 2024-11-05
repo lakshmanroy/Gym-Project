@@ -280,3 +280,109 @@ span{
     border: 1px solid var(--main-color);
     transform: translateY(-5px) scale(1.03);
 } */
+
+.review{
+    background: var(--bg-color);
+}
+.review-box{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+.review.heading{
+    margin-bottom: 5rem;
+}
+.review-box img{
+    width: 15rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.review-item{
+    min-height: 450px;
+    min-width: 350px;
+    background: var(--snd-bg-color);
+    border: 3px solid rgba(238,238,238,0.3);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+.review-item:hover{
+    border: 2px solid var(--main-color);
+    transform: translateY(-5px) scale(1.03);
+}
+.review-item h2{
+    font-size: 2.8rem;
+}
+.review-item p{
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+#star{
+    color: gold;
+    font-size: 2rem;
+}
+/* Footer Section */
+.footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: var(--snd-bg-color);
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center; /* Center align icons */
+    gap: 20px; /* Space between icons */
+    padding-bottom: 20px;
+}
+
+.footer .social a {
+    color: var(--main-color); /* Define the main color */
+    font-size: 32px; /* Adjust icon size to be bold */
+    transition: color 0.3s; /* Smooth hover transition */
+}
+
+.footer .social a:hover {
+    color: var(--hover-color); /* Optional: hover color for icons */
+}
+
+/* Optional styling for copyright text */
+.footer p {
+    color: var(--main-color);
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer.copyright{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-color);  
+}
+
+/* scroll bar design */
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    width: 50px;
+}
