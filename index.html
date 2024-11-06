@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>LKRD Fitness</title>
@@ -11,16 +12,14 @@
 
     <header>
         <a href="#home" class="logo">LKRD <span>Fitness</span></a>
-
-        <div class='bx bx-menu' id="menu-icon"></div>
-
-        <ul class="navbar">
+        <div class="bx bx-menu" id="menu-icon"></div> <!-- Menu icon with correct ID -->
+        
+        <ul class="navbar"> <!-- Navbar with correct class -->
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="#plans">Pricing</a></li>
             <li><a href="#review">Review</a></li>
-
         </ul>
        <div class="top-btn">
              <a href="#" class="nav-btn">Join Us</a>
@@ -28,7 +27,7 @@
     </header>
 
     <section class="home" id="home">
-        <div class="home-content">
+        <div class="home-content" data-aos="zoom-in">
             <h3>Build your</h3>
             <h1>Dream physique</h1>
             <h3><span class="multiple-text"></span></h3>
@@ -39,16 +38,16 @@
         </div>
 
         <div class="home-img">
-            <img src="heroImage.png" alt="Home Image">
+            <img src="heroImage.png" alt="Home Image" data-aos="zoom-in">
         </div>
 
     </section>
     
 
     <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
+        <h2 class="heading" data-aos="zoom-in-down">Our <span>Services</span></h2>
 
-        <div class="services-content">
+        <div class="services-content" data-aos="zoom-in-up">
             <div class="row">
                 <img src="image1.jpg" alt="">
 
@@ -84,11 +83,11 @@
     </section>
 
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
                 <img src="about.jpg" alt="">
         </div>
         
-        <div class="about-content">
+        <div class="about-content" data-aos="zoom-in-up">
             <h2 class="heading">Why Choose us?</h2>
 
             <p>Our Diverse membership base created friendly and supportive atmosphere,where you can make friends and stay motivated</p>
@@ -101,9 +100,9 @@
     </section>
 
     <section class="plans" id="plans">
-        <h2 class="heading">Our <Span>Plans</Span></h2>
+        <h2 class="heading" data-aos="zoom-in-down">Our <Span>Plans</Span></h2>
 
-        <div class="plans-content">
+        <div class="plans-content" data-aos="zoom-in-up">
             <div class="box">
                 <h3>BASIC</h3>
                 <h2><span>$100/Month</span></h2>
@@ -149,8 +148,8 @@
 
     <section class="review" id="review">
         <div class="review-box">
-            <h2 class="heading">Client <Span>Reviews</Span></h2>
-            <div class="wrapper">
+            <h2 class="heading" data-aos="zoom-in-down">Client <Span>Reviews</Span></h2>
+            <div class="wrapper" data-aos="zoom-in-top">
                 <div class="review-item">
                     <img src="sumit.png" alt="">
                     <h2>Sumit kumar</h2>
@@ -217,6 +216,13 @@
 
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        offset=300,
+        duration=1400,
+      );
+    </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 

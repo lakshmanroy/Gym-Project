@@ -1,14 +1,18 @@
-let menu= document.querySelector('#menu-icon');
-let navbar=document.querySelector('.navbar');
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-menu.onClick=()=>{
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+// Toggle the menu icon and navbar active state on click
+menu.onclick = () => {
+    menu.classList.toggle('bx-x'); // Changes the menu icon to an "x" icon
+    navbar.classList.toggle('active'); // Toggles the active class on navbar
 }
-window.onscroll=()=>{
+
+// Remove the "x" icon and active class on scroll
+window.onscroll = () => {
     menu.classList.remove('bx-x');
     navbar.classList.remove('active');
 }
+
 
 //Typing text code
 
