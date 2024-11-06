@@ -306,18 +306,18 @@ span{
 }
 .review-item{
     min-height: 450px;
-    min-width: 350px;
+    min-width: 280px;
     background: var(--snd-bg-color);
     border: 3px solid rgba(238,238,238,0.3);
     border-radius: 2rem;
     margin: 0 2rem;
-    padding: 30px 60px;
+    padding: 30px 40px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     color: #fff;
     transition: 0.5s ease-in-out;
 }
@@ -385,4 +385,104 @@ span{
 ::-webkit-scrollbar-thumb{
     background: var(--main-color);
     width: 50px;
+}
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:991px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 255px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        transition: 0.5s ease;
+    }
+    .navbar a{
+        display: block;
+        padding: 17px;
+        font-size: 22px;
+    }
+    .navbar.active{
+        right: 0;
+    }
+    header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3%;
+    }
+    .services{
+        padding: 7rem;
+    }
+    .about-content h2{
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 5rem;
+    }
+    .review.wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer{
+        padding: 40px 0;
+    }
+}
+@media(max-width:786px){
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+       font-size: 4.5rem;
+       margin-top: 1.5rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+        margin-top: 1.5rem;
+    }
+    .home-content{
+        order: 2;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about-content{
+        text-align: center;
+    }
+    .about-content h2{
+        text-align: center;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+}
+@media(max-width:618px){
+ .home-img img{
+    width: 80vw;
+    margin-top: 8rem;
+ }
+ .about-img img{
+    width: 70vw;
+    margin-top: 4rem;
+ }
+}
+@media(max-width:450px){
+  html{
+    font-size: 50%;
+  }
 }
